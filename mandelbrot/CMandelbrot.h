@@ -5,8 +5,10 @@ struct Daten {
 	int iterations;
 	double z_realteil;
 	double z_imaginearteil;
+	double betrag;
 	double getZIntensiteatReal(CMandelbrot mandelbrot);
 	double getZIntensiteatImag(CMandelbrot mandelbrot);
+	double getZIntensiteatAll(CMandelbrot mandelbrot);
 };
 
 class CMandelbrot

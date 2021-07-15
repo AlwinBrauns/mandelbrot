@@ -30,9 +30,9 @@ void CFilehandler::schreibeDatei(CMandelbrot mandelbrot)
 				detail
 			);
 
-			int rot = (intensiteat.iterations % 255 * intensiteat.getZIntensiteatReal(mandelbrot));
-			int gruen = (intensiteat.iterations % 255 * intensiteat.getZIntensiteatImag(mandelbrot));
-			int blau = (intensiteat.iterations % 255);
+			int rot = (intensiteat.iterations % 255);
+			int gruen = (intensiteat.iterations % 255);
+			int blau = ( intensiteat.iterations % 255 * (intensiteat.betrag / 4));
 
 			dateiAusgabe << rot << " " << gruen << " " << blau << " ";
 		}
